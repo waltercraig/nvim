@@ -36,7 +36,12 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+-- https://superuser.com/questions/212257/how-do-i-open-a-blank-new-file-in-a-split-in-vim
+vim.keymap.set('n', '<leader>v', ':vnew<CR>', { desc = 'Open new window fresh buffer, I hope' })
 
+-- Tabs baby
+-- Note tabnext is gt
+vim.keymap.set('n', '<leader>t', ':tabnew', { desc = 'Open new tab' })
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
